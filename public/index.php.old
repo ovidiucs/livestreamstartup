@@ -1,0 +1,29 @@
+<?php
+// Controller
+// 1. What URL are they trying to access:
+
+//echo $_SERVER['REQUEST_URI'];
+// 2. If user is on the homepage ($_SERVER returns '/') then echo the proper message else say otherwise
+	if ($_SERVER['REQUEST_URI'] != '/') {
+// function in php, regular expression, parenthesis are required () a-z + repeaded any number of time| imsx are options for regex,
+// look at request uri, look for name slash save that into a variable $pmatches 
+// whatever is in the first parenthesis is going to be saved as element one of that array
+		preg_match('!name/([a-z]+)!imsx', $_SERVER['REQUEST_URI'],$pmatches);
+//		echo $pmatches[1]; die;
+		// HOMEPAGE
+		// Get the homepage from a file
+//		echo file_get_contents("../templates/index.html");
+		// Or print a message 
+//		 echo 'You are on the homepage';
+		// or str_replace to put in content in the html placeholders
+		$content = file_get_contents("../templates/index.dyn");
+		$content = str_replace  ("{text}",'Hello '.$pmatches[1], $content);
+		echo $content;
+	} else {
+		echo 'You are not on the homepage';
+		// NOT HOMEPAGE
+	}
+
+
+
+
