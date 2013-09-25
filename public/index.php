@@ -11,7 +11,8 @@
 	$Database		= new TDatabase();
 	$Logging		= new TLogging();
 
-
+	$Logging->log("Starting Script.");
+	
 	$ControllerVars['loggedin'] = 0;
 // Doar verifica
 	if ($Authentication->isAuthorized()) {

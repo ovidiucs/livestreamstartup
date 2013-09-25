@@ -2,14 +2,13 @@
 	// Logging Class
 	class TLogging {
 		function __construct() {
-			echo "Logging Class Called<br />";
-			 $logfile = '../logs/test.txt';
-
-			 if ($fp = fopen('../logs/test.txt','a+')){
-				 fwrite($fp,"Testing\n");
-				 fclose($fp);
-			 } else {
-				 echo "Could Not Write to File<br />";
+			 $this->logfile = '../logs/log_'.date(Ymd).'.txt';
 		}
-	}
+
+		function log($message) {
+			$fp = fopen($this->logfile, 'a+');
+			$logmessage = date('Y m d h:t:s', time())."|".$message."\n";
+			fwrite($fp,$message."\n");
+			fclose($fp);
+		}
 }
