@@ -4,10 +4,12 @@
 	require_once("../classes/class.Authentication.php");
 	require_once("../classes/class.Session.php");
 	require_once("../classes/class.Database.php");
+	require_once("../classes/class.Logging.php");
 	
 	$Session 		= new TSession();
 	$Authentication = new TAuthentication();
 	$Database		= new TDatabase();
+	$Logging		= new TLogging();
 
 
 	$ControllerVars['loggedin'] = 0;
