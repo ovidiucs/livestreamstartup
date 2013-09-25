@@ -1,5 +1,6 @@
 <?php
 	class TAuthentication {
+
 		function __construct() {
 			// Constructor
 			if ($_GET['logout'] == 1) {

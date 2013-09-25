@@ -1,23 +1,24 @@
 <?php
 // Controller
-
+// Includes
 	require_once("../classes/class.Authentication.php");
 	require_once("../classes/class.Session.php");
-
+	require_once("../classes/class.Database.php");
+	
 	$Session 		= new TSession();
 	$Authentication = new TAuthentication();
+	$Database		= new TDatabase();
+
 
 	$ControllerVars['loggedin'] = 0;
-
+// Doar verifica
 	if ($Authentication->isAuthorized()) {
-
 		$ControllerVars['loggedin'] = 1;
 
 	} else {
-		
 		if ($_POST['submit'] == "Submit") {
-		
 			if ($Authentication->checkUserPass()) {
+		
 				$ControllerVars['loggedin'] = 1;
 		
 				$Authentication->succesfulLogin();
@@ -27,13 +28,16 @@
 			}
 		}
 	}
-			echo "Login status is: ".$ControllerVars['loggedin'];
-		if ($ControllerVars['loggedin'] == 0) {
-			// Not logged in
-			$content = file_get_contents("../templates/loginform.html");
-			echo $content;
+
+	echo "Login status is: ".$ControllerVars['loggedin'];
+
+	if ($ControllerVars['loggedin'] == 0) {
+		// Not logged in
+		$content = file_get_contents("../templates/loginform.html");
+		echo $content;
 	}
-		die;
+	
+	die;
 
 	if ($_SERVER['REQUEST_URI'] != '/') {
 		preg_match('!name/([a-z]+)!imsx', $_SERVER['REQUEST_URI'],$pmatches);
@@ -43,5 +47,3 @@
 	} else {
 		echo 'You are on the homepage';
 	}
-
-
