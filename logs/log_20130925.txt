@@ -1,1 +1,9 @@
 Starting Script.
+Connected to Database
+Starting Script.
+Connected to Database
+Starting Script.
+Connected to Database
+Starting Script.
+/var/www/livestreamstartup/classes/class.Database.phpConnected to Database
+Starting Script.

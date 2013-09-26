@@ -1,14 +1,14 @@
 <?php
+	require_once"../classes/class.Logging.php";
+
 	class TDatabase {
 		function __construct() {
+			$this->Logging = new TLogging();
 
 			if ($this->database = mysqli_connect("localhost","root","protocolaritate","users")) {
-				echo "Connected <br />";
-				$sqlQuery = "SELECT * FROM users.users";
-					$result = $this->multiRowQuery($sqlQuery);
-				print_r($result);
+				$this->Logging->log(__FILE__ ."||". __CLASS__ ."||". __LINE__."||"."Connected to Database");
 			} else {
-			echo "Could not connect\n";
+				$this->Logging->log("Could not connect to Database");
 		}
 	}
 
