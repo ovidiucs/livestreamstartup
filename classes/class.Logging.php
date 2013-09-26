@@ -7,8 +7,12 @@
 
 		function log($message) {
 			$fp = fopen($this->logfile, 'a+');
-			$logmessage = date('Y m d h:t:s', time())."|".$message."\n";
-			fwrite($fp,$message."\n");
+			$logMessage = date('Y m d h:t:s', time())."|".$message."\n";
+			
+			// Strip out root path 
+			$logMessage = str_replace('/var/www/livestreamstartup/','', $logMessage);
+
+			fwrite($fp,$logMessage);
 			fclose($fp);
 		}
 }

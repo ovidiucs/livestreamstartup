@@ -5,11 +5,16 @@
 	require_once("../classes/class.Session.php");
 	require_once("../classes/class.Database.php");
 	require_once("../classes/class.Logging.php");
-	
+	require_once("../classes/class.ParseURI.php");	
+
 	$Session 		= new TSession();
 	$Authentication = new TAuthentication();
 	$Database		= new TDatabase();
 	$Logging		= new TLogging();
+	// fct constructor asteapata un argument
+	$ParseURI		= new TParseURI($_SERVER['REQUEST_URI']);
+
+	echo "The page name is: ".$ParseURI->getPageName();
 
 	$Logging->log("Starting Script.");
 	
@@ -32,7 +37,6 @@
 		}
 	}
 
-	echo "Login status is: ".$ControllerVars['loggedin'];
 
 	if ($ControllerVars['loggedin'] == 0) {
 		// Not logged in

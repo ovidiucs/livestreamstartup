@@ -1,6 +1,6 @@
 <?php
+		require_once("../classes/class.Logging.php");
 	class TAuthentication {
-
 		function __construct() {
 			// Constructor
 			if ($_GET['logout'] == 1) {
@@ -29,4 +29,10 @@
 		function failedLogin() {
 			$_SESSION['loggedin'] = 0;
 		}		
+		// Function related to creating new users below
+
+		function createUser($username, $password) {
+			$sqlQuery = "insert into users (username, password) values ('.$username','.$password')";
+			$this->Logging->log($sqlQuery);
+		}
 }

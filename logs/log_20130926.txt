@@ -1,12 +1,34 @@
-/var/www/livestreamstartup/classes/class.Database.phpTDatabase9Connected to Database
-Starting Script.
-/var/www/livestreamstartup/classes/class.Database.phpTDatabase9Connected to Database
-Starting Script.
-/var/www/livestreamstartup/classes/class.Database.phpTDatabase9Connected to Database
-Starting Script.
-/var/www/livestreamstartup/classes/class.Database.phpTDatabase9Connected to Database
-Starting Script.
-/var/www/livestreamstartup/classes/class.Database.php||TDatabase9Connected to Database
-Starting Script.
 /var/www/livestreamstartup/classes/class.Database.php||TDatabase||9||Connected to Database
 Starting Script.
+2013 09 26 05:30:07|classes/class.Database.php||TDatabase||9||Connected to Database
+
+2013 09 26 05:30:07|Starting Script.
+
+2013 09 26 05:30:48|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 05:30:48|Starting Script.
+2013 09 26 06:30:06|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:06|Starting Script.
+2013 09 26 06:30:59|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:59|Starting Script.
+2013 09 26 06:30:10|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:10|Starting Script.
+2013 09 26 06:30:16|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:16|Starting Script.
+2013 09 26 06:30:53|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:53|Starting Script.
+2013 09 26 06:30:12|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:12|Starting Script.
+2013 09 26 06:30:13|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:13|Starting Script.
+2013 09 26 06:30:06|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:06|Starting Script.
+2013 09 26 06:30:12|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:12|Starting Script.
+2013 09 26 06:30:20|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:20|Starting Script.
+2013 09 26 06:30:29|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:29|Starting Script.
+2013 09 26 06:30:38|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:38|Starting Script.
+2013 09 26 06:30:44|classes/class.Database.php||TDatabase||9||Connected to Database
+2013 09 26 06:30:44|Starting Script.
